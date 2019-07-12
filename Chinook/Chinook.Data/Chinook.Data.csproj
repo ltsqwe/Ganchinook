@@ -103,6 +103,7 @@
       <DependentUpon>Chinook.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Album.cs" />
+    <Compile Include="Entities\InvoicdLine.cs" />
     <Compile Include="Entities\Track.cs" />
     <Compile Include="Genre.cs">
       <DependentUpon>Chinook.tt</DependentUpon>

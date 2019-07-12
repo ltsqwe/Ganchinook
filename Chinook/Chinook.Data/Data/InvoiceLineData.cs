@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using MyLibrary;
 using System.Linq;
 using System.Linq.Expressions;
+using MyLibrary.Helpers;
 
 namespace Chinook.Data
 {
@@ -21,9 +22,19 @@ namespace Chinook.Data
             using (ChinookEntities context = DbContextFactory.Create<ChinookEntities>())
             {
                 var query = from x in context.InvoiceLines
-                    select x;
+                    select new
+                    {
+                        InvoiceLine =x,
+                        TrackName = x.Track.Name
+                    };
 
-                return query.ToList();
+                var list = query.ToList();
+                foreach (var x in list)
+                {
+                    x.InvoiceLine.TrackName= x.TrackName;
+                }
+                
+                return list.ConvertAll(x => x.InvoiceLine);
             }
         }
         

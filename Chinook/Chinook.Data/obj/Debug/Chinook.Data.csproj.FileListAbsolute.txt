@@ -31,3 +31,16 @@ C:\git\file_study\7.4\Chinook\Chinook.Data\obj\Debug\Chinook.Data.dll
 C:\git\file_study\7.4\Chinook\Chinook.Data\obj\Debug\Chinook.Data.pdb
 C:\workspace\Sumi\file_study\7.4\Chinook\Chinook.Data\bin\Debug\Newtonsoft.Json.dll
 C:\workspace\Sumi\file_study\7.4\Chinook\Chinook.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\bin\Debug\Chinook.Data.dll.config
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\bin\Debug\Chinook.Data.dll
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\bin\Debug\Chinook.Data.pdb
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\bin\Debug\EntityFramework.dll
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\bin\Debug\EntityFramework.xml
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\obj\Debug\Chinook.Data.csproj.CoreCompileInputs.cache
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\obj\Debug\Chinook.Data.csproj.CopyComplete
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\obj\Debug\Chinook.Data.dll
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\obj\Debug\Chinook.Data.pdb

@@ -25,7 +25,7 @@ namespace Chinook.Forms
         {
             base.OnLoad(e);
 
-            albumBindingSource.DataSource = DataRepository.Album.GetAll();
+            trackBindingSource.DataSource = DataRepository.Track.GetAll();
         }
 
         private void BackstageViewControl1_Click(object sender, EventArgs e)

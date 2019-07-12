@@ -74,10 +74,19 @@
     <Compile Include="Forms\CardView.Designer.cs">
       <DependentUpon>CardView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\CardView.resx">
       <DependentUpon>CardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -91,7 +100,30 @@
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Chinook.Data.Album.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.AlbumData.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.Album_ArtistName.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.Album_GetByArtistId_Result.datasource" />
     <None Include="Properties\DataSources\Chinook.Data.Artist.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.ArtistData.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.ChinookEntities.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.Customer.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.CustomerData.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.DataRepository.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.Employee.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.EmployeeData.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.Genre.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.GenreData.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.Invoice.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.InvoiceData.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.InvoiceLine.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.InvoiceLineData.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.MediaType.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.MediaTypeData.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.Playlist.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.PlaylistData.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.Track.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.TrackData.datasource" />
+    <None Include="Properties\DataSources\Chinook.Data.TrackModel.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
