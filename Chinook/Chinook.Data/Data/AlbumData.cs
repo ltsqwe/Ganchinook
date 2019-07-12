@@ -14,7 +14,19 @@ namespace Chinook.Data
         {
         }
 
-        public Album GetByPK(int albumId)
+        public List<Track> GetTracksById(int albumId)
+        {
+            using (ChinookEntities context = DbContextFactory.Create<ChinookEntities>())
+            {
+                var query = from x in context.Tracks
+                    where x.AlbumId == albumId
+                    select x;
+
+                return query.ToList();
+            }
+        }
+
+        public Album GetByPk(int albumId)
         {
             using (ChinookEntities context = DbContextFactory.Create<ChinookEntities>())
             {
