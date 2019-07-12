@@ -40,6 +40,7 @@ C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\bin\Debug\Newtonso
 C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\bin\Debug\EntityFramework.xml
 C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\obj\Debug\Chinook.Data.csprojAssemblyReference.cache
 C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\obj\Debug\Chinook.Data.csproj.CoreCompileInputs.cache
 C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\obj\Debug\Chinook.Data.csproj.CopyComplete
 C:\Users\kccistc\source\repos\Ganchinook\Chinook\Chinook.Data\obj\Debug\Chinook.Data.dll

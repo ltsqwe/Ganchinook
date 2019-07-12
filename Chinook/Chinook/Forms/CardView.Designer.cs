@@ -34,6 +34,7 @@
             this.cardView1 = new DevExpress.XtraGrid.Views.Card.CardView();
             this.colTrackId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.colAlbumId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMediaTypeId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colGenreId = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -41,6 +42,8 @@
             this.colMilliseconds = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBytes = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colUnitPrice1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemImageEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemImageEdit();
             this.albumBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.dcpCart = new DevExpress.XtraBars.Docking.DockPanel();
@@ -48,8 +51,6 @@
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.invoiceLineBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gdvInvoiceLine = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.colInvoiceLineId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colInvoiceId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTrackId1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -58,9 +59,16 @@
             this.colInvoice = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTrack = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList3 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.albumBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.dcpCart.SuspendLayout();
@@ -82,6 +90,9 @@
             this.gridControl1.MainView = this.cardView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemImageEdit1,
+            this.repositoryItemPictureEdit1});
             this.gridControl1.Size = new System.Drawing.Size(693, 196);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -104,7 +115,8 @@
             this.colComposer,
             this.colMilliseconds,
             this.colBytes,
-            this.colUnitPrice1});
+            this.colUnitPrice1,
+            this.gridColumn2});
             this.cardView1.DetailHeight = 280;
             this.cardView1.GridControl = this.gridControl1;
             this.cardView1.Name = "cardView1";
@@ -118,10 +130,19 @@
             // 
             // colName
             // 
+            this.colName.ColumnEdit = this.repositoryItemPictureEdit1;
             this.colName.FieldName = "Name";
+            this.colName.ImageOptions.Alignment = System.Drawing.StringAlignment.Center;
+            this.colName.ImageOptions.Image = global::Chinook.Properties.Resources.title_img;
+            this.colName.ImageOptions.ImageUri.Uri = "EditDataSource;Size32x32";
             this.colName.Name = "colName";
             this.colName.Visible = true;
             this.colName.VisibleIndex = 1;
+            // 
+            // repositoryItemPictureEdit1
+            // 
+            this.repositoryItemPictureEdit1.CustomHeight = 110;
+            this.repositoryItemPictureEdit1.Name = "repositoryItemPictureEdit1";
             // 
             // colAlbumId
             // 
@@ -171,6 +192,20 @@
             this.colUnitPrice1.Name = "colUnitPrice1";
             this.colUnitPrice1.Visible = true;
             this.colUnitPrice1.VisibleIndex = 8;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "gridColumn2";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 9;
+            // 
+            // repositoryItemImageEdit1
+            // 
+            this.repositoryItemImageEdit1.AutoHeight = false;
+            this.repositoryItemImageEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemImageEdit1.Name = "repositoryItemImageEdit1";
             // 
             // albumBindingSource
             // 
@@ -245,15 +280,6 @@
             this.gdvInvoiceLine.GridControl = this.gridControl2;
             this.gdvInvoiceLine.Name = "gdvInvoiceLine";
             // 
-            // gridSplitContainer1
-            // 
-            this.gridSplitContainer1.Grid = this.gridControl1;
-            this.gridSplitContainer1.Location = new System.Drawing.Point(4, 2);
-            this.gridSplitContainer1.Name = "gridSplitContainer1";
-            this.gridSplitContainer1.Panel1.Controls.Add(this.gridControl1);
-            this.gridSplitContainer1.Size = new System.Drawing.Size(693, 196);
-            this.gridSplitContainer1.TabIndex = 2;
-            // 
             // colInvoiceLineId
             // 
             this.colInvoiceLineId.FieldName = "InvoiceLineId";
@@ -310,6 +336,33 @@
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 7;
             // 
+            // gridSplitContainer1
+            // 
+            this.gridSplitContainer1.Grid = this.gridControl1;
+            this.gridSplitContainer1.Location = new System.Drawing.Point(4, 2);
+            this.gridSplitContainer1.Name = "gridSplitContainer1";
+            this.gridSplitContainer1.Panel1.Controls.Add(this.gridControl1);
+            this.gridSplitContainer1.Size = new System.Drawing.Size(693, 196);
+            this.gridSplitContainer1.TabIndex = 2;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // imageList2
+            // 
+            this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // imageList3
+            // 
+            this.imageList3.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList3.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // CardView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -323,6 +376,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.albumBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.dcpCart.ResumeLayout(false);
@@ -368,5 +423,11 @@
         private DevExpress.XtraGrid.Columns.GridColumn colInvoice;
         private DevExpress.XtraGrid.Columns.GridColumn colTrack;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemImageEdit repositoryItemImageEdit1;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.ImageList imageList3;
     }
 }
