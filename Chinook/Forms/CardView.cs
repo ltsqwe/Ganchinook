@@ -24,5 +24,18 @@ namespace Chinook.Forms
 
             albumBindingSource.DataSource = DataRepository.Album.GetAll();
         }
+
+        private void btnCart_Click(object sender, EventArgs e)
+        {
+            CartListView cartView = new CartListView();
+            cartView.Show();
+        }
+
+        private void GridControl1_Click_1(object sender, EventArgs e)
+        {
+            Album album = (Album)cardView1.GetFocusedRow();
+            txtAddToCart.Text = album.AlbumId + $"번 앨범이 추가되었습니다.\n"
+                + $"Title : " + album.ToString();
+        }
     }
 }
