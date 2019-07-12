@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Chinook/Chinook/bin/Debug/ru
+/Chinook/Chinook/bin/Debug/ja
+/Chinook/Chinook/bin/Debug/es
+/Chinook/Chinook/bin/Debug/de
+/Chinook/Chinook/bin/Debug

@@ -19,7 +19,7 @@ namespace Chinook.Data
                 DbContextFactory.Create<ChinookEntities>())
             {
                 var query = from x in context.Tracks
-                            where x.AlbumId < 10
+                            where x.AlbumId ==albumId
                             select x;
 
                 return query.Count();
